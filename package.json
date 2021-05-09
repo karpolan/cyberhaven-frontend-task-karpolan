@@ -1,0 +1,23 @@
+{
+  "name": "frontend-task-karpolan",
+  "version": "0.1.1",
+  "description": "Test task for Cyberhaven",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cyberhaven-frontend/frontend-task-karpolan.git"
+  },
+  "keywords": [
+    "graph",
+    "react"
+  ],
+  "author": "Anton Karpenko <i@karpolan.com> (https://karpolan.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cyberhaven-frontend/frontend-task-karpolan/issues"
+  },
+  "homepage": "https://github.com/cyberhaven-frontend/frontend-task-karpolan#readme"
+}
