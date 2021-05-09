@@ -6,11 +6,10 @@ import { testCasesBad, testCasesGood } from './index';
 testCasesBad.forEach(({ input, out, name }) => {
   test(name, () => {
     // put your parsing and topoSort code here
-    const output = out.trim(); // Single word for bad cases...
     const graph = textToGraph(input);
     const sorted = topoSort(graph);
     expect(sorted).toBeUndefined();
-    expect('impossible').toEqual(output)
+    expect(compareText('impossible', out)).toEqual(0);
   });
 });
 
@@ -19,7 +18,6 @@ testCasesBad.forEach(({ input, out, name }) => {
 testCasesGood.forEach(({ input, out, name }) => {
   test(name, () => {
     // put your parsing and topoSort code here
-    // console.log('Regular - input:', input, 'output:', out);
     const graph = textToGraph(input);
     const sorted = topoSort(graph);
     const text = sortedObjectToText(sorted);
