@@ -1,0 +1,12 @@
+.GraphViewer {
+
+}
+
+.GraphViewer label {
+  display: block;
+}
+
+.GraphViewer textarea {
+  width: 100%;
+  min-height: 10rem;
+}

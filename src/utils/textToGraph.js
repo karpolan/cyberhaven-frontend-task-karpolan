@@ -12,11 +12,11 @@ const textToGraph = (text) => {
 
   const lines = text.split('\n');  
   for (let line of lines) {
-    line = line.replace(/(\r\n|\n|\r)/gm, ""); // Remove \r and other "brakes"
+    line = line.replace(/(\r\n|\n|\r)/gm, "").trim(); // Remove \r and other "brakes"
 
     if (line === '') continue; // skip empty lines
-    const [from, calls, to] = line.split(' ');
-    if (!from || !to || calls.toLowerCase() !== 'calls') {
+    const [from, calls, to, bad] = line.split(' ');
+    if (!from || !to || bad || calls.toLowerCase() !== 'calls') {
       console.error('textToGraph() - invalid line:', line);
       return undefined;
     }

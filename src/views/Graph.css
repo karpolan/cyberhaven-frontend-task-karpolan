@@ -1,0 +1,13 @@
+.GraphView {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.GraphView .GraphBuilder {
+    min-width: 24rem;
+}
+
+.GraphView .GraphViewer {
+    min-width: 24rem;
+}

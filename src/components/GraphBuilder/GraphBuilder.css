@@ -1,0 +1,30 @@
+.GraphBuilder {
+
+}
+
+.GraphBuilder label {
+  display: block;
+}
+
+.GraphBuilder textarea {
+  width: 100%;
+  min-height: 10rem;
+}
+
+.GraphBuilder .status {
+  margin: 0.5rem 0;
+}
+
+.GraphBuilder .error {
+  color: red;
+}
+
+.GraphBuilder .actions {
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+}
+
+.GraphBuilder button {
+  margin: 0.25rem;
+}

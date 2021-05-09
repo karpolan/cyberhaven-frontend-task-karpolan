@@ -1,7 +1,13 @@
-function App() {
+import GraphView from "./views/Graph";
+import './App.css'
+
+/**
+ * Main Application component
+ */
+const App = () => {
   return (
     <div className="App">
-      React app here...
+      <GraphView />
     </div>
   );
 }
